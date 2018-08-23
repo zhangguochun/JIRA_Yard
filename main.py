@@ -4,6 +4,7 @@ from Task import Task
 import json
 import pandas as pd
 import matplotlib.pyplot as plt
+import time
 
 DEBUG=True
 
@@ -26,7 +27,7 @@ def json_task_post(scrumteam):
     jira_connection = JiraConnection()
 
     jira_connection.\
-            setUserAndPass("user:pass").\
+            setUserAndPass("gzhang:Pinwen@18").\
             setHeader().\
             setBody(body)
 
@@ -49,7 +50,7 @@ def json_story_post(scrumteam):
     jira_connection = JiraConnection()
 
     jira_connection.\
-            setUserAndPass("gzhang:Pinwen@18").\
+            setUserAndPass("user:psw").\
             setHeader().\
             setBody(body)
 
@@ -84,10 +85,7 @@ def story_crunch(scrumteam, stories):
     for p in ax.patches:
         ax.annotate(str(p.get_width()), (p.get_width() * 1.005, p.get_y() * 1.005))
 
-    if DEBUG:
-        plt.show()
-    else:
-        plt.savefig(scrumteam+'.png')
+    plt.savefig(scrumteam+'.png')
 
 def task_crunch(scrumteam, tasks):
 
@@ -99,13 +97,10 @@ def task_crunch(scrumteam, tasks):
     data=pdata.groupby('Assignee').sum()
     print(data)
 
-    plt.show()
-
 ##########################
 if __name__ == '__main__':
 
     DEBUG=False
-    print("Debug mode is "+str(DEBUG))
 
     if (DEBUG):
         print("Test story...")
@@ -117,6 +112,7 @@ if __name__ == '__main__':
         task_crunch('CN_test', tasks)
 
     if (not DEBUG):
+        print(time.strftime("%c"))
         for i in range(1,9):
             CNx="CN"+str(i)
             print("=== Team: %s ==="%CNx)
