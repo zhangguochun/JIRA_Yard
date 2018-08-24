@@ -7,6 +7,7 @@ import matplotlib.pyplot as plt
 import time
 
 DEBUG=True
+userpsw="user:psw"
 
 def json_task_post(scrumteam):
 
@@ -27,7 +28,7 @@ def json_task_post(scrumteam):
     jira_connection = JiraConnection()
 
     jira_connection.\
-            setUserAndPass("gzhang:Pinwen@18").\
+            setUserAndPass(userpsw).\
             setHeader().\
             setBody(body)
 
@@ -50,7 +51,7 @@ def json_story_post(scrumteam):
     jira_connection = JiraConnection()
 
     jira_connection.\
-            setUserAndPass("user:psw").\
+            setUserAndPass(userpsw).\
             setHeader().\
             setBody(body)
 
