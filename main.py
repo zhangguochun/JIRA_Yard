@@ -6,6 +6,9 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import time
 from configuration import userpsw
+from flask import Flask
+
+app = Flask(__name__)
 
 DEBUG=True
 
@@ -100,8 +103,10 @@ def task_crunch(scrumteam, tasks):
     print(data)
 
 ##########################
-if __name__ == '__main__':
 
+
+def report():
+    
     DEBUG=False
 
     if (DEBUG):
@@ -124,5 +129,9 @@ if __name__ == '__main__':
             tasks = json_task_post(CNx)
             task_crunch(CNx,tasks)
 
+@app.route('/')
+def hello_world():
+    return 'Flask Dockerized hahhahhah'
 
-
+if __name__ == '__main__':
+    app.run(debug=DEBUG,host='0.0.0.0')
