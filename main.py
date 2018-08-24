@@ -5,9 +5,10 @@ import json
 import pandas as pd
 import matplotlib.pyplot as plt
 import time
+from configuration import userpsw
 
 DEBUG=True
-userpsw="user:psw"
+
 
 def json_task_post(scrumteam):
 
