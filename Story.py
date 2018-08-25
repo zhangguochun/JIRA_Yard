@@ -10,9 +10,11 @@ class Story():
             try:
                 key=story["key"]
 
+                developer=''
                 for storyDeveloper in story["fields"]["customfield_12866"]:
-                    developer=storyDeveloper["displayName"]
-                    break # Always get the 1st story developer
+                    if (developer!=''):
+                        developer=developer+';'
+                    developer=developer+storyDeveloper["displayName"]
 
                 sp=story["fields"]["customfield_10242"]  #story point
                 status=story["fields"]["status"]["name"]
