@@ -24,7 +24,7 @@ class JiraConnection(ABC):
         return self
 
     def sendRequest(self):
-        self.connection=HTTPSConnection("jira.aspiraconnect.com")
+        self.connection=HTTPSConnection("jira.aspiraconnect.com", context=ssl._create_unverified_context())
         self.connection.request('POST', '/rest/api/2/search', headers=self._headers, body=self._body)
         return self.connection.getresponse().read()
         

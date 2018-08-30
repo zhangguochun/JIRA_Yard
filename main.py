@@ -2,6 +2,10 @@ from jira_connection_base import JiraConnection
 from Story import Story
 from Task import Task
 import json
+
+import matplotlib as mpl
+mpl.use('Agg')
+
 import pandas as pd
 import matplotlib.pyplot as plt
 import time
@@ -163,11 +167,18 @@ def report():
                       task_data.to_html())
 
             rpt.flush()
+            plt.close()
+            plt.close("all")
 
         rpt.close()
 
 
 
+
 if __name__ == '__main__':
-    report()
+    while True:
+        print('Start running report ...')
+        report()
+        print('Start sleeping 15 minutes ...')
+        time.sleep(60*15)
 
