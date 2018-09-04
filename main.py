@@ -11,7 +11,7 @@ import matplotlib.pyplot as plt
 import time
 from configuration import userpsw, DEBUG
 
-def json_task_post(scrumteam):
+def json_task_post(scrumteam, jira_connection):
 
     body='''
     {
@@ -27,8 +27,6 @@ def json_task_post(scrumteam):
     }
     '''%scrumteam
 
-    jira_connection = JiraConnection()
-
     jira_connection.\
             setUserAndPass(userpsw).\
             setHeader().\
@@ -40,7 +38,7 @@ def json_task_post(scrumteam):
 
     return task.get_task()
 
-def json_story_post(scrumteam):
+def json_story_post(scrumteam, jira_connection):
         # Body
     body='''
     {
@@ -132,6 +130,12 @@ def report():
     if (not DEBUG):
         rpt=open("report.html","w+")
         rpt.write('<h3>'+time.strftime("%c")+'</h3>')
+
+        jira_connection = JiraConnection()
+
+        if (jira_connection==None):
+            return None
+
         for i in range(1,9):
             CNx="CN"+str(i)
 
@@ -139,7 +143,7 @@ def report():
             rpt.write('<h2>Team: %s</h2>'%CNx)
 
             # render story
-            stories = json_story_post(CNx)
+            stories = json_story_post(CNx, jira_connection)
             story_data= story_crunch(stories)
 
             ax=story_data.plot(kind='barh')
@@ -155,7 +159,7 @@ def report():
             rpt.flush()
 
             # render task
-            tasks = json_task_post(CNx)
+            tasks = json_task_post(CNx, jira_connection)
             task_data=task_crunch(tasks)
             # task_data.plot.pie(y=['Remaining_hrs'], subplots=True, figsize=(3, 3), radius=0.5)
             # plt.legend(loc='lower right')
