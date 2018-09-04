@@ -1,0 +1,686 @@
+Sat Aug 25 11:46:14 2018
+=== Team: CN1 ===<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Story Point</th>
+      <th>Bug</th>
+    </tr>
+    <tr>
+      <th>Story Developer</th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>Ben An</th>
+      <td>54.0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>Gordon Cheng</th>
+      <td>38.0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>Long Hui</th>
+      <td>13.0</td>
+      <td>0</td>
+    </tr>
+  </tbody>
+</table><table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Remaining_hrs</th>
+    </tr>
+    <tr>
+      <th>Assignee</th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>Ben An</th>
+      <td>74.0</td>
+    </tr>
+    <tr>
+      <th>Cathy Si</th>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <th>Cindy Zhang</th>
+      <td>52.0</td>
+    </tr>
+    <tr>
+      <th>Fiona Yuan</th>
+      <td>14.5</td>
+    </tr>
+    <tr>
+      <th>George Tang</th>
+      <td>45.0</td>
+    </tr>
+    <tr>
+      <th>Gordon Cheng</th>
+      <td>114.0</td>
+    </tr>
+    <tr>
+      <th>Iris Shen</th>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <th>Jun Ren</th>
+      <td>45.5</td>
+    </tr>
+    <tr>
+      <th>Long Hui</th>
+      <td>80.0</td>
+    </tr>
+    <tr>
+      <th>Sunny Qiao</th>
+      <td>21.0</td>
+    </tr>
+  </tbody>
+</table>
+=== Team: CN2 ===<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Story Point</th>
+      <th>Bug</th>
+    </tr>
+    <tr>
+      <th>Story Developer</th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>Bruce Dong</th>
+      <td>8.0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>Cherry Zhang</th>
+      <td>11.0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>Jeremy Wu</th>
+      <td>15.0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>Kent Huang</th>
+      <td>14.0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>Yuhang Wu</th>
+      <td>11.0</td>
+      <td>0</td>
+    </tr>
+  </tbody>
+</table><table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Remaining_hrs</th>
+    </tr>
+    <tr>
+      <th>Assignee</th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>Bruce Dong</th>
+      <td>36.0</td>
+    </tr>
+    <tr>
+      <th>Cherry Zhang</th>
+      <td>36.0</td>
+    </tr>
+    <tr>
+      <th>Jenny Ma</th>
+      <td>53.0</td>
+    </tr>
+    <tr>
+      <th>Jeremy Wu</th>
+      <td>43.0</td>
+    </tr>
+    <tr>
+      <th>Kent Huang</th>
+      <td>27.5</td>
+    </tr>
+    <tr>
+      <th>Mandy Shen</th>
+      <td>51.5</td>
+    </tr>
+    <tr>
+      <th>Martin Zhang</th>
+      <td>7.0</td>
+    </tr>
+    <tr>
+      <th>Sherry Wei</th>
+      <td>34.0</td>
+    </tr>
+    <tr>
+      <th>Yuhang Wu</th>
+      <td>26.0</td>
+    </tr>
+  </tbody>
+</table>
+=== Team: CN3 ===<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Story Point</th>
+      <th>Bug</th>
+    </tr>
+    <tr>
+      <th>Story Developer</th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>Allen Yu</th>
+      <td>19.0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>Colin Wei</th>
+      <td>13.0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>Frank Li</th>
+      <td>12.0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>Jerome Zhou</th>
+      <td>13.0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>Jordan Wang</th>
+      <td>3.5</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>Wesley Peng</th>
+      <td>5.0</td>
+      <td>0</td>
+    </tr>
+  </tbody>
+</table><table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Remaining_hrs</th>
+    </tr>
+    <tr>
+      <th>Assignee</th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>Allen Yu</th>
+      <td>34.5</td>
+    </tr>
+    <tr>
+      <th>Amy Lee</th>
+      <td>42.5</td>
+    </tr>
+    <tr>
+      <th>Cathy Si</th>
+      <td>8.5</td>
+    </tr>
+    <tr>
+      <th>Cindy Zhang</th>
+      <td>22.0</td>
+    </tr>
+    <tr>
+      <th>Colin Wei</th>
+      <td>61.0</td>
+    </tr>
+    <tr>
+      <th>Frank Li</th>
+      <td>66.0</td>
+    </tr>
+    <tr>
+      <th>Iris Shen</th>
+      <td>33.0</td>
+    </tr>
+    <tr>
+      <th>Jerome Zhou</th>
+      <td>38.5</td>
+    </tr>
+    <tr>
+      <th>Jordan Wang</th>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <th>Sunny Qiao</th>
+      <td>36.0</td>
+    </tr>
+    <tr>
+      <th>Wesley Peng</th>
+      <td>0.0</td>
+    </tr>
+  </tbody>
+</table>
+=== Team: CN4 ===<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Story Point</th>
+      <th>Bug</th>
+    </tr>
+    <tr>
+      <th>Story Developer</th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>Dayton Wang</th>
+      <td>13.0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>Kai Ji</th>
+      <td>16.0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>Luke Liu</th>
+      <td>9.0</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <th>Victor Cao</th>
+      <td>15.0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>Winston Wang</th>
+      <td>2.5</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>Yolanda Liu</th>
+      <td>13.5</td>
+      <td>0</td>
+    </tr>
+  </tbody>
+</table><table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Remaining_hrs</th>
+    </tr>
+    <tr>
+      <th>Assignee</th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>Alicia Li</th>
+      <td>16.0</td>
+    </tr>
+    <tr>
+      <th>Dayton Wang</th>
+      <td>35.0</td>
+    </tr>
+    <tr>
+      <th>Jane Sun</th>
+      <td>65.0</td>
+    </tr>
+    <tr>
+      <th>Kai Ji</th>
+      <td>35.0</td>
+    </tr>
+    <tr>
+      <th>Liz Du</th>
+      <td>14.0</td>
+    </tr>
+    <tr>
+      <th>Luke Liu</th>
+      <td>24.0</td>
+    </tr>
+    <tr>
+      <th>Selina Ren</th>
+      <td>56.0</td>
+    </tr>
+    <tr>
+      <th>Victor Cao</th>
+      <td>64.0</td>
+    </tr>
+    <tr>
+      <th>Winston Wang</th>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <th>Yolanda Liu</th>
+      <td>46.0</td>
+    </tr>
+  </tbody>
+</table>
+=== Team: CN5 ===<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Story Point</th>
+      <th>Bug</th>
+    </tr>
+    <tr>
+      <th>Story Developer</th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>Adward Tu</th>
+      <td>18.5</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>Jacky Zhang</th>
+      <td>17.0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>Kan He</th>
+      <td>16.0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>Kevin Weng</th>
+      <td>11.0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>Lewis Lv</th>
+      <td>15.0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>Tony Zhang</th>
+      <td>14.5</td>
+      <td>0</td>
+    </tr>
+  </tbody>
+</table><table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Remaining_hrs</th>
+    </tr>
+    <tr>
+      <th>Assignee</th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>Adward Tu</th>
+      <td>21.5</td>
+    </tr>
+    <tr>
+      <th>Dana Wang</th>
+      <td>57.0</td>
+    </tr>
+    <tr>
+      <th>Jacky Zhang</th>
+      <td>35.0</td>
+    </tr>
+    <tr>
+      <th>Kan He</th>
+      <td>78.5</td>
+    </tr>
+    <tr>
+      <th>Kevin Weng</th>
+      <td>30.5</td>
+    </tr>
+    <tr>
+      <th>Lewis Lv</th>
+      <td>55.5</td>
+    </tr>
+    <tr>
+      <th>Maggie Yao</th>
+      <td>57.5</td>
+    </tr>
+    <tr>
+      <th>Nina Gao</th>
+      <td>117.0</td>
+    </tr>
+    <tr>
+      <th>Tony Zhang</th>
+      <td>26.0</td>
+    </tr>
+  </tbody>
+</table>
+=== Team: CN6 ===<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Story Point</th>
+      <th>Bug</th>
+    </tr>
+    <tr>
+      <th>Story Developer</th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>Billy Cheng</th>
+      <td>15.0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>Charles Xi</th>
+      <td>3.0</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <th>Derek Liu</th>
+      <td>12.0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>Junhuai Zhang</th>
+      <td>31.0</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <th>Mike Li</th>
+      <td>8.0</td>
+      <td>0</td>
+    </tr>
+  </tbody>
+</table><table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Remaining_hrs</th>
+    </tr>
+    <tr>
+      <th>Assignee</th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>Billy Cheng</th>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <th>Charles Xi</th>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <th>Derek Liu</th>
+      <td>17.5</td>
+    </tr>
+    <tr>
+      <th>Junhuai Zhang</th>
+      <td>25.0</td>
+    </tr>
+    <tr>
+      <th>Mike Li</th>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <th>Mona Wang</th>
+      <td>53.0</td>
+    </tr>
+    <tr>
+      <th>Tina Yu</th>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <th>wendy guo</th>
+      <td>41.0</td>
+    </tr>
+  </tbody>
+</table>
+=== Team: CN7 ===<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Story Point</th>
+      <th>Bug</th>
+    </tr>
+    <tr>
+      <th>Story Developer</th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>Eric Hou</th>
+      <td>13.0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>Nathan Du</th>
+      <td>12.5</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>Zihan He</th>
+      <td>16.0</td>
+      <td>0</td>
+    </tr>
+  </tbody>
+</table><table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Remaining_hrs</th>
+    </tr>
+    <tr>
+      <th>Assignee</th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>Allison Zhang</th>
+      <td>63.166667</td>
+    </tr>
+    <tr>
+      <th>Eric Hou</th>
+      <td>48.000000</td>
+    </tr>
+    <tr>
+      <th>Fiona Yuan</th>
+      <td>0.000000</td>
+    </tr>
+    <tr>
+      <th>Nathan Du</th>
+      <td>28.500000</td>
+    </tr>
+    <tr>
+      <th>Zihan He</th>
+      <td>79.000000</td>
+    </tr>
+  </tbody>
+</table>
+=== Team: CN8 ===<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Story Point</th>
+      <th>Bug</th>
+    </tr>
+    <tr>
+      <th>Story Developer</th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>Alexander Yang</th>
+      <td>13.0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>Ding Zhao</th>
+      <td>10.0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>Lei Zhang</th>
+      <td>10.0</td>
+      <td>0</td>
+    </tr>
+  </tbody>
+</table><table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Remaining_hrs</th>
+    </tr>
+    <tr>
+      <th>Assignee</th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>Alexander Yang</th>
+      <td>46.0</td>
+    </tr>
+    <tr>
+      <th>Alicia Li</th>
+      <td>49.0</td>
+    </tr>
+    <tr>
+      <th>Ding Zhao</th>
+      <td>21.0</td>
+    </tr>
+    <tr>
+      <th>Lei Zhang</th>
+      <td>28.0</td>
+    </tr>
+    <tr>
+      <th>Liz Du</th>
+      <td>38.0</td>
+    </tr>
+  </tbody>
+</table>
