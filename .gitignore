@@ -3,5 +3,6 @@ __pycache__/Task.cpython-36.pyc
 __pycache__/configuration.cpython-36.pyc
 __pycache__/configuration.cpython-37.pyc
 
-/configuration.py
-/pic/*
+configuration.py
+.idea
+pic/
