@@ -32,7 +32,10 @@ def json_task_post(scrumteam, jira_connection):
             setHeader().\
             setBody(body)
 
-    x=jira_connection.sendRequest()
+    try:
+        x=jira_connection.sendRequest()
+    except Exception:
+        raise
 
     task= Task(json.loads(x.decode()))
 
@@ -55,7 +58,10 @@ def json_story_post(scrumteam, jira_connection):
             setHeader().\
             setBody(body)
 
-    x=jira_connection.sendRequest()
+    try:
+        x=jira_connection.sendRequest()
+    except Exception:
+        raise
 
     story = Story(json.loads(x.decode()))
 
@@ -137,42 +143,45 @@ def report():
             return None
 
         for i in range(1,9):
-            CNx="CN"+str(i)
+            try:
+                CNx="CN"+str(i)
 
-            rpt.write('<hr/>')
-            rpt.write('<h2>Team: %s</h2>'%CNx)
+                rpt.write('<hr/>')
+                rpt.write('<h2>Team: %s</h2>'%CNx)
 
-            # render story
-            stories = json_story_post(CNx, jira_connection)
-            story_data= story_crunch(stories)
+                # render story
+                stories = json_story_post(CNx, jira_connection)
+                story_data= story_crunch(stories)
 
-            ax=story_data.plot(kind='barh')
-            for p in ax.patches:
-                ax.annotate(str(p.get_width()), (p.get_width() * 1.01, p.get_y() * 1.005))
+                ax=story_data.plot(kind='barh')
+                for p in ax.patches:
+                    ax.annotate(str(p.get_width()), (p.get_width() * 1.01, p.get_y() * 1.005))
 
-            plt.subplots_adjust(left=0.2)
-            plt.savefig('pic/SP_'+CNx+'.png')
-            rpt.write('<img src="/pic/SP_'+CNx+'.png'+'" />')
+                plt.subplots_adjust(left=0.2)
+                plt.savefig('pic/SP_'+CNx+'.png')
+                rpt.write('<img src="/pic/SP_'+CNx+'.png'+'" />')
 
-            rpt.write('<span style="display: inline-block">%s</span>'%
-                      story_data.to_html())
-            rpt.flush()
+                rpt.write('<span style="display: inline-block">%s</span>'%
+                          story_data.to_html())
+                rpt.flush()
 
-            # render task
-            tasks = json_task_post(CNx, jira_connection)
-            task_data=task_crunch(tasks)
-            # task_data.plot.pie(y=['Remaining_hrs'], subplots=True, figsize=(3, 3), radius=0.5)
-            # plt.legend(loc='lower right')
-            # plt.subplots_adjust(left=0.0)
-            # plt.savefig('pic/hours_'+CNx+'.png')
-            # rpt.write('<img src="/pic/hours_'+CNx+'.png'+'" />')
+                # render task
+                tasks = json_task_post(CNx, jira_connection)
+                task_data=task_crunch(tasks)
+                # task_data.plot.pie(y=['Remaining_hrs'], subplots=True, figsize=(3, 3), radius=0.5)
+                # plt.legend(loc='lower right')
+                # plt.subplots_adjust(left=0.0)
+                # plt.savefig('pic/hours_'+CNx+'.png')
+                # rpt.write('<img src="/pic/hours_'+CNx+'.png'+'" />')
 
-            rpt.write('<span style="display: inline-block">%s</span>'%
-                      task_data.to_html())
-
-            rpt.flush()
-            plt.close()
-            plt.close("all")
+                rpt.write('<span style="display: inline-block">%s</span>'%
+                          task_data.to_html())
+            except Exception:
+                print(Exception)
+            finally:
+                rpt.flush()
+                plt.close()
+                plt.close("all")
 
         rpt.close()
 

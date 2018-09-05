@@ -26,18 +26,11 @@ class JiraConnection(ABC):
     def sendRequest(self):
 
         try:
-            self.connection=HTTPSConnection("jira.aspiraconnect.com", context=ssl._create_unverified_context())
+            self.connection=HTTPSConnection("jira.aspiraconnect.com")
             self.connection.request('POST', '/rest/api/2/search', headers=self._headers, body=self._body)
             return self.connection.getresponse().read()
-        except ConnectionResetError:
-            print(error_message='Connection reset')
-            return None
-        except TimeoutError:
-            print(error_message='Timeout....')
-            return None
-
-        return None
-
+        except (ConnectionResetError, TimeoutError) as e:
+            raise Exception('Connection Error')
         
 
 
