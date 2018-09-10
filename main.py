@@ -89,7 +89,7 @@ def story_crunch(stories):
         sort_values(by=['Story Point'])
 
     data['Bug Rate']=data['Bug']/data['Story Point']
-    data['Bug Rate']=data['Bug Rate'].round(1)
+    data['Bug Rate']=data['Bug Rate'].round(3)
     print(data)
 
     return data
