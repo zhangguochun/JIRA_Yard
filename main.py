@@ -88,6 +88,7 @@ def story_crunch(stories):
         join(pdata.groupby('Story Developer')['Bug'].sum()).\
         sort_values(by=['Story Point'])
 
+    data['Bug Rate']=data['Bug']/data['Story Point']
     print(data)
 
     return data
@@ -168,11 +169,6 @@ def report():
                 # render task
                 tasks = json_task_post(CNx, jira_connection)
                 task_data=task_crunch(tasks)
-                # task_data.plot.pie(y=['Remaining_hrs'], subplots=True, figsize=(3, 3), radius=0.5)
-                # plt.legend(loc='lower right')
-                # plt.subplots_adjust(left=0.0)
-                # plt.savefig('pic/hours_'+CNx+'.png')
-                # rpt.write('<img src="/pic/hours_'+CNx+'.png'+'" />')
 
                 rpt.write('<span style="display: inline-block">%s</span>'%
                           task_data.to_html())
