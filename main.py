@@ -90,6 +90,7 @@ def story_crunch(stories):
 
     data['Bug Rate']=data['Bug']/data['Story Point']
     data['Bug Rate']=data['Bug Rate'].round(3)
+
     print(data)
 
     return data
@@ -137,13 +138,14 @@ def report():
 
     if (not DEBUG):
         rpt=open("report.html","w+")
-        rpt.write('<h3>'+time.strftime("%c")+'</h3>')
+        rpt.write('<h3> The data generated from JIRA at: '+time.strftime("%c")+'</h3>')
 
         jira_connection = JiraConnection()
 
         if (jira_connection==None):
             return None
 
+        summary=pd.DataFrame(columns=['Total Story Point', 'Average Bug Rate'])
         for i in range(1,9):
             try:
                 CNx="CN"+str(i)
@@ -161,10 +163,12 @@ def report():
 
                 plt.subplots_adjust(left=0.2)
                 plt.savefig('pic/SP_'+CNx+'.png')
+
                 rpt.write('<img src="/pic/SP_'+CNx+'.png'+'" />')
 
                 rpt.write('<span style="display: inline-block">%s</span>'%
                           story_data.to_html())
+
                 rpt.flush()
 
                 # render task
@@ -173,17 +177,28 @@ def report():
 
                 rpt.write('<span style="display: inline-block">%s</span>'%
                           task_data.to_html())
-            except Exception:
-                print(Exception)
+                #
+                # summary.append(pd.DataFrame(
+                #     [story_data['Story Point'].sum(),story_data['Bug'].sum()/story_data['Story Point'].sum()],
+                #     index=str(i)))
+
+                summary.loc['CN'+str(i), ['Total Story Point', 'Average Bug Rate']] = \
+                    [story_data['Story Point'].sum(),
+                     round(story_data['Bug'].sum()/story_data['Story Point'].sum(),3)]
+
+            except IOError:
+                print(IOError.errno)
             finally:
                 rpt.flush()
                 plt.close()
                 plt.close("all")
 
+        rpt.write('<hr/>')
+        rpt.write('<h3> Team Summary </h3>')
+        rpt.write('<span style="display: inline-block">%s</span>'%
+                          summary.to_html())
+        rpt.flush()
         rpt.close()
-
-
-
 
 if __name__ == '__main__':
     while True:

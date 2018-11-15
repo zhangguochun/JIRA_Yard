@@ -31,6 +31,15 @@ class JiraConnection(ABC):
             return self.connection.getresponse().read()
         except (ConnectionResetError, TimeoutError) as e:
             raise Exception('Connection Error')
+
+    def requestInGet(self, path):
+        try:
+            self.connection=HTTPSConnection("jira.aspiraconnect.com")
+            self.connection.request('GET', path, headers=self._headers)
+            return self.connection.getresponse().read()
+        except (ConnectionResetError, TimeoutError) as e:
+            raise Exception('Connection Error')
+
         
 
 
