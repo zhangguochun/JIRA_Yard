@@ -146,9 +146,12 @@ def report():
             return None
 
         summary=pd.DataFrame(columns=['Total Story Point', 'Average Bug Rate'])
-        for i in range(1,9):
+        for i in range(1,11):
             try:
-                CNx="CN"+str(i)
+                if i<8:
+                    CNx="CN"+str(i)
+                else:
+                    CNx="NA"+str(i-7)
 
                 rpt.write('<hr/>')
                 rpt.write('<h2>Team: %s</h2>'%CNx)
