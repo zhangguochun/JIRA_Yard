@@ -185,7 +185,7 @@ def report():
                 #     [story_data['Story Point'].sum(),story_data['Bug'].sum()/story_data['Story Point'].sum()],
                 #     index=str(i)))
 
-                summary.loc['CN'+str(i), ['Total Story Point', 'Average Bug Rate']] = \
+                summary.loc[CNx, ['Total Story Point', 'Average Bug Rate']] = \
                     [story_data['Story Point'].sum(),
                      round(story_data['Bug'].sum()/story_data['Story Point'].sum(),3)]
 
